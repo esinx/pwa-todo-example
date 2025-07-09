@@ -28,7 +28,7 @@ export function Navigation({
 					{/* App Brand */}
 					<div className="flex items-center gap-3">
 						<CheckSquare className="w-6 h-6 text-blue-600" />
-						<h1 className="text-lg font-semibold text-gray-900">PWA Todo</h1>
+						<h1 className="text-lg font-semibold text-gray-900">Todo</h1>
 					</div>
 
 					{/* Actions */}
