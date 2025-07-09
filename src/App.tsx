@@ -35,7 +35,7 @@ function App() {
 			/>
 
 			{/* Main Content - with top padding to account for fixed nav */}
-			<div className="container mx-auto px-4 pt-20 pb-8 max-w-2xl mobile-content">
+			<div className="container mx-auto px-4 pt-40 pb-8 max-w-2xl mobile-content">
 				{/* App Description */}
 				<div className="text-center mb-6">
 					<p className="text-gray-600 text-sm">
