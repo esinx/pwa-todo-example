@@ -22,7 +22,7 @@ export default defineConfig({
 				runtimeCaching: [
 					{
 						urlPattern: /^https:\/\/.*\.supabase\.co\/.*$/,
-						handler: "CacheFirst",
+						handler: "NetworkFirst",
 						options: {
 							cacheName: "supabase-cache",
 							expiration: {
