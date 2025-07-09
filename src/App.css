@@ -92,10 +92,36 @@ body {
 	outline-offset: 2px;
 }
 
+/* Navigation enhancements */
+.nav-backdrop {
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+}
+
+/* Safe area support for devices with notches */
+@supports (padding-top: env(safe-area-inset-top)) {
+	.nav-safe-area {
+		padding-top: env(safe-area-inset-top);
+	}
+
+	.content-safe-area {
+		padding-top: calc(4rem + env(safe-area-inset-top));
+	}
+}
+
 /* Mobile optimizations */
 @media (max-width: 640px) {
 	.container {
 		padding-left: 16px;
 		padding-right: 16px;
+	}
+
+	/* Ensure navigation doesn't overlap with status bar on mobile */
+	.mobile-nav {
+		padding-top: env(safe-area-inset-top, 0);
+	}
+
+	.mobile-content {
+		padding-top: calc(4rem + env(safe-area-inset-top, 0));
 	}
 }
