@@ -29,27 +29,7 @@ body {
 	flex-direction: column;
 }
 
-/* PWA Install Button Styling */
-.install-prompt {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-	color: white;
-	padding: 12px 24px;
-	border-radius: 12px;
-	box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
-	border: none;
-	cursor: pointer;
-	font-weight: 500;
-	transition: all 0.3s ease;
-	z-index: 1000;
-}
-
-.install-prompt:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
-}
+/* PWA Install Button Styling - Now handled by InstallButton component */
 
 /* Animations */
 @keyframes slideUp {

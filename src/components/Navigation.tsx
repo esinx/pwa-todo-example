@@ -1,6 +1,7 @@
 import { CheckSquare, RefreshCw } from "lucide-react"
 import { SyncStatus } from "./SyncStatus"
 import { ManualSyncButton } from "./ManualSyncButton"
+import { InstallButton } from "./InstallButton"
 
 interface NavigationProps {
 	isOnline: boolean
@@ -56,6 +57,8 @@ export function Navigation({
 							isSyncing={isSyncing}
 							pendingOperationsCount={pendingOperationsCount}
 						/>
+
+						<InstallButton />
 					</div>
 				</div>
 			</div>

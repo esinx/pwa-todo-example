@@ -2,6 +2,7 @@ import { RefreshCw, WifiOff } from "lucide-react"
 import { AddTodo } from "@/components/AddTodo"
 import { TodoList } from "@/components/TodoList"
 import { Navigation } from "@/components/Navigation"
+import { IOSInstallInstructions } from "@/components/InstallButton"
 import { useTodos } from "@/hooks/useTodos"
 import "./App.css"
 
@@ -36,6 +37,9 @@ function App() {
 
 			{/* Main Content - with top padding to account for fixed nav */}
 			<div className="container mx-auto px-4 pt-40 pb-8 max-w-2xl mobile-content">
+				{/* iOS Install Instructions */}
+				<IOSInstallInstructions />
+
 				{/* App Description */}
 				<div className="text-center mb-6">
 					<p className="text-gray-600 text-sm">
